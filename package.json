@@ -8,7 +8,7 @@
     "debug": "node debug ./bin/www",
     "start": "NODE_ENV=production node ./bin/www",
     "start:production": "NODE_ENV=production node ./bin/www",
-    "lint": "eslint ./app.js routes",
+    "lint": "eslint ./public  -f compact file.js > results.txt --ext ts; exit 0",
     "format": "eslint --fix . bin --ignore public node_modules",
     "pretest": "npm run lint",
     "test": "npm run test:unit && npm run test:integration",
